@@ -1,0 +1,578 @@
+@font-face {
+  font-family: 'Chanel';
+  src: url("project2\ fonts/Chanel.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Darius-Bold';
+  src: url('project2\ fonts/Darius-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Breadley';
+  src: url('project2\ fonts/Breadley.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Prada';
+  src: url('project2\ fonts/Prada.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  width: 100%;
+  background-color: black;
+  overflow-y: auto;
+}
+
+body#coco {
+    z-index: 1;
+    background: linear-gradient(to right top, black 54%, #93580C, #EBCB76);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+}
+
+body#naomi {
+  z-index: 1;
+  background: linear-gradient(-45deg,#3e3eff, #3e0d0d, black, #ffc662);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+}
+
+body#diane {
+  z-index: 1;
+  background: linear-gradient(-45deg,#d34e1d, #000000, rgb(18, 69, 103), #ff382af6);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+}
+
+body#prada {
+  z-index: 1;
+  background: linear-gradient(-45deg,#000000, #159391, rgb(0, 0, 0), #fe6a0ef6);
+  background-size: 800% 800%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+
+.navbar {
+  font-family: 'Century Gothic', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0px;
+  padding: 20px 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30%;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  text-align: end;
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color: rgb(255, 177, 3);
+}
+
+.header-container {
+  width: 100%;
+  text-align: left;
+  margin-top: 15%;
+}
+
+.body-header {
+  font-size: 3rem;
+  font-weight: bold; 
+  text-align: left;
+  margin: 2% 15%; 
+  color: #fff;
+}
+
+#coco .body-header {
+  font-family: 'Chanel';
+}
+
+#naomi .body-header {
+  font-family: 'Darius-Bold';
+}
+
+#diane .body-header {
+  font-family: 'Breadley';
+  font-weight: 550;
+}
+
+#diane h1.body-header {
+  font-family: 'Breadley';
+  font-weight: 550;
+  font-size: 90px;
+}
+
+#diane h2.body-header {
+  font-family: 'Breadley';
+  font-weight: 550;
+  font-size: 40px;
+}
+
+
+#prada .body-header {
+  font-family: 'Prada';
+}
+
+h1.body-header {
+  font-size: 4rem;
+  margin-bottom: 3%; 
+}
+
+h2.body-header {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-top: 3%;
+}
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 15px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0 15px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.home .home_text {
+  max-width: 50%;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 9%;
+  padding-left: 9%;
+}
+
+.home_text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 23px;
+}
+
+.home_text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #dedede;
+  font-family: 'Century Gothic', sans-serif;
+  line-height: 1.25;
+}
+
+.home .img {
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+.home .img img {
+  width: 517px;
+}
+
+.home .buttons {
+  margin-top: 40px;
+}
+
+.home .buttons a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.home .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.buttons .button {
+  background-color:rgb(255, 177, 3);
+}
+
+
+.home .buttons a:hover {
+  background-color: rgb(251, 94, 25);
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+
+.text {
+  color: #e5e5e5;
+  font-family: 'Century Gothic';
+  font-style: italic;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10%;
+}
+
+.text p {
+  margin-top: 1%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+.image {
+  text-align: center;
+  flex: 1;
+  margin: 10px;
+  position: relative;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 400px; 
+  width: auto;
+  height: auto;
+}
+
+.image-title {
+  margin: 5%;
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 100;
+}
+
+.citation {
+  margin: 0%;
+  font-size: 12px;
+  color: #c9c9c9;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.footer {
+  background-color: #1414158e;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Century Gothic';
+  position: relative;
+  z-index: 2;
+}
+
+.page .page_text {
+  max-width: 70%;
+  color: #fff;
+  column-count: 2;
+}
+
+.page_text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 23px;
+}
+
+.page_text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #dedede;
+  font-family: 'Century Gothic', sans-serif;
+  line-height: 1.5;
+}
+
+.page .img img {
+  margin-top: 10%;
+  width: 517px;
+}
+
+.img iframe {
+  width: 560px;
+  height: 315px;
+  margin-top: 10%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: rgba(21, 15, 27, 0.914);
+    flex-direction: column;
+    transition: 0.3s ease;
+    font-size: 23px;
+  }
+
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .header .buttons {
+    display: none;
+  }
+
+  .header-container {
+    width: 100%;
+    text-align: left;
+    margin-top: 20%;
+  }
+
+  h1.body-header {
+    font-size: 5vh;
+    margin-bottom: 4%;
+    margin-top: 15%;
+  }
+  
+  h2.body-header {
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
+
+  #diane h1.body-header {
+    font-size: 6vh;
+  }
+  
+  #diane h2.body-header {
+    font-size: 35px;
+  }
+
+  #prada h1.body-header {
+    font-size: 4vh;
+  }
+  
+
+  .home {
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .home .home_text {
+    max-width: 100%;
+    margin-top: 20%;
+    margin-bottom: 2%;
+  }
+
+  .home img {
+    margin-top: 15%;
+    margin-bottom: 2%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .home .page_text {
+    max-width: 100%;
+    margin-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .page .page_text {
+    max-width: 70%;
+    color: #fff;
+    column-count: 1;
+  }
+
+  .page .img img {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+
+  .img iframe {
+    width: 500px;
+    height: 315px;
+  }
+
+  .image-container {
+    flex-wrap: wrap;
+  }
+  
+  .image {
+    flex: 1 0 40%; 
+  }
+
+  body#naomi {
+    background-size: 700% 700%;
+  }
+
+  body#diane {
+    background-size: 700% 700%;
+  }
+  
+  body#prada {
+    background-size: 900% 900%;
+  }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .home .home_text {
+    margin-bottom: 3.5%;
+    margin-top: 40%;
+  }
+
+  .header-container {
+    width: 100%;
+    text-align: left;
+    margin-top: 30%;
+  }
+
+  .body-header {
+    margin: 18% 15%; 
+  }
+
+  h1.body-header {
+    font-size: 2.4rem;
+    margin-bottom: 15%;
+  }
+  
+  h2.body-header {
+    font-size: 1.4rem;
+    margin-bottom: 4%;
+  }
+
+  #diane h1.body-header {
+    font-size: 4vh;
+    margin: 10% 15%; 
+  }
+
+  #diane h2.body-header {
+    font-size: 2.5vh;
+    margin: 10% 15%; 
+  }
+
+  #prada h1.body-header {
+    font-size: 3vh;
+    margin: 19% 15%; 
+  }
+
+  #prada h2.body-header {
+    font-size: 2vh;
+    margin: 9% 15%; 
+  }
+
+  .img iframe {
+    width: 100%; 
+    height: auto; 
+    margin-top: 5%; 
+  }
+
+  .image {
+    flex: 1 0 90%;
+  }
+
+  body#naomi {
+    background-size: 800% 800%;
+  }
+
+  body#diane {
+    background-size: 800% 800%;
+  }
+
+  body#prada {
+    background-size: 1200% 1200%;
+  }
+
+  .footer{
+    margin-top: 15%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-wrap: wrap;
+  }
+
+}
